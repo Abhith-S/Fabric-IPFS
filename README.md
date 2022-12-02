@@ -9,6 +9,8 @@ Go to web3.storage/login to get started. <br />
 Enter your email address or use github <br />
 Check your inbox for a verification email from web3.storage, and click the Log in button in the email or authorize github. <br />
 
+
+
 Get API Token <br />
 This token enables you to interact with the web3.storage service without using the main website, enabling you to incorporate files stored using web3.storage directly into your applications and services. <br />
 go to web3.storage API Tokens page. <br />
@@ -17,13 +19,15 @@ You can click Copy to copy your new API token to your clipboard. <br />
 For the starting code to upload a file and retrieve its CID see here. <br />
 
 
+
+
+
 Using With Fabric :  <br />
 I worked with the fabcar example in fabric-samples. <br />
 Clone this "https://github.com/hyperledger/fabric-samples.git" repository. <br />
 
 
 Replace the chaincode and fabcar folder with the chaincode and fabcar folder in my repository. <br />
-
 
 
 cd fabric-samples/fabcar/javascript <br />
@@ -36,18 +40,28 @@ Now up the network. <br />
 cd fabric-samples/fabcar  <br />
 ./startFabric.sh javascript <br />
 
+
+
 Now we have to enroll an admin and then register a user. <br />
 cd fabric-samples/fabcar/javascript <br />
 node enrollAdmin.js  <br />
 node registerUser.js  <br />
 
+
+
 Now we have to run the invoke.js to upload the file to IPFS and store its CID onto fabric. <br />
 node invoke.js <br />
+
+
 
 Now we query the couchDB to retrieve the CID.  <br />
 node query.js  <br />
 
+
+
+
 Check the couchDB at localhost:5984/_utils  <br />
+
 
 
 The CID of the file is stored in the variable ‘cid’ at invoke.js. Console logging will give its value. The file can be viewed at :  <br />
