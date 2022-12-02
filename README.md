@@ -26,9 +26,9 @@ Replace the chaincode and fabcar folder with the chaincode and fabcar folder in 
 
 
 
-fabric-samples/fabcar/javascript 
-npm install 
-npm install web3.storage@3.1.0
+fabric-samples/fabcar/javascript <br />
+npm install <br />
+npm install web3.storage@3.1.0  <br />
 
 
 
